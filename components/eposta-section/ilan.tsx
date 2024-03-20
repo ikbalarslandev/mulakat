@@ -14,8 +14,8 @@ const Ilan = () => {
         <hr />
         <SectionTemplate desc="Takip ettiğim ilanların kapanma tarihlerine dair bilgilendirme" />
         <hr />
-        {/* <SectionTemplate desc="Başvurduğum ilanların mülakat daveti detaylarına dair bilgilendirmeler" />
-        <hr /> */}
+        <SectionTemplate desc="Başvurduğum ilanların mülakat daveti detaylarına dair bilgilendirmeler" />
+        <hr />
       </div>
     </div>
   );
