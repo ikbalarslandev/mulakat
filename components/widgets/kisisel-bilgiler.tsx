@@ -5,7 +5,17 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const InputTemplate = ({ name, placeholder, className = "flex-1" }: any) => {
+interface InputTemplateProps {
+  name: string;
+  placeholder: string;
+  className?: string;
+}
+
+const InputTemplate = ({
+  name,
+  placeholder,
+  className = "flex-1",
+}: InputTemplateProps) => {
   return (
     <div className={`flex flex-col space-y-1.5 relative  ${className}`}>
       <Label

@@ -5,7 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { IoWarningOutline } from "react-icons/io5";
 import { Button } from "../ui/button";
 
-const CheckboxTemplate = ({ desc }: any) => {
+const CheckboxTemplate = ({ desc }: { desc: string }) => {
   return (
     <div className="flex items-center space-x-2">
       <Checkbox id="terms" />

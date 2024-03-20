@@ -1,27 +1,8 @@
-"use client";
-
-import { useState } from "react";
-
-import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
 import { Button } from "@/components/ui/button";
 
-const IstiyorumSwitch = () => {
-  const [iwant, setIwant] = useState(false);
-  const handleIwant = () => {
-    setIwant(!iwant);
-  };
-  return (
-    <div className="flex items-center space-x-2">
-      <Label className="w-20" htmlFor="airplane-mode">
-        {iwant ? "istiyorum" : "istemiyorum"}
-      </Label>
-      <Switch onClick={handleIwant} checked={iwant} id="airplane-mode" />
-    </div>
-  );
-};
+import IstiyorumSwitch from "../istiyorum-swithch";
 
-const SectionTemplate = ({ desc }: any) => {
+const SectionTemplate = ({ desc }: { desc: string }) => {
   return (
     <div className="flex items-center justify-between w-full">
       <p className="text-gray-500 text-sm">{desc}</p>
