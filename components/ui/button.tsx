@@ -11,7 +11,7 @@ const buttonVariants = cva(
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
         dogrula: "bg-gray-200 text-gray-700 rounded-none ",
-        kaydet: "bg-blue-700 text-white w-[7vw] rounded-none ",
+        kaydet: "bg-mblue text-white w-[7vw] rounded-none ",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:

@@ -39,7 +39,7 @@ const InputTemplate = ({
       <Input
         id={name}
         placeholder={placeholder}
-        className="border-blue-800 py-4 "
+        className="border-mblue py-4 "
       />
       {isPassword &&
         (showPassword ? (

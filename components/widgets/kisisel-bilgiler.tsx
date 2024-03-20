@@ -31,11 +31,11 @@ const KisiselBilgiler = () => {
           </div>
           <div className=" flex justify-between  items-center ">
             <div className="flex  items-center gap-4 w-[25vw] ">
-              <div className="border-blue-800 flex-1 mt-[6px]">
+              <div className="border-mblue flex-1 mt-[6px]">
                 <Select>
                   <SelectTrigger
                     id="framework"
-                    className="border-blue-800 text-blue-800"
+                    className="border-blue-800 text-mblue"
                   >
                     <SelectValue placeholder="Turkiye" />
                   </SelectTrigger>

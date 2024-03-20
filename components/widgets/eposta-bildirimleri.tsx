@@ -17,7 +17,7 @@ const EpostaBildirimleri = () => {
       <SectionTemplate desc="E-posta bildirimleri" />
       <div className="w-full">
         {" "}
-        <h3 className="border border-blue-700 rounded-sm  w-full my-5 px-4 py-2 text-blue-700 font-bold">
+        <h3 className="border border-mblue rounded-sm  w-full my-5 px-4 py-2 text-mblue font-bold">
           İLAN BİLGİLENDİRMELERİ
         </h3>
         <div className="flex flex-col w-full gap-4">
@@ -32,7 +32,7 @@ const EpostaBildirimleri = () => {
         </div>
       </div>
       <div className="w-full">
-        <h3 className="border border-blue-700 rounded-sm  w-full my-5 px-4 py-2 text-blue-700 font-bold">
+        <h3 className="border border-mblue rounded-sm  w-full my-5 px-4 py-2 text-mblue font-bold">
           ÖZGEÇMİŞ VE HESAP BİLGİLENDİRMELERİ
         </h3>
         <div className="flex flex-col w-full gap-4">
@@ -45,7 +45,7 @@ const EpostaBildirimleri = () => {
         </div>
       </div>
       <div className="w-full">
-        <h3 className="border border-blue-700 rounded-sm  w-full my-5 px-4 py-2 text-blue-700 font-bold">
+        <h3 className="border border-mblue rounded-sm  w-full my-5 px-4 py-2 text-mblue font-bold">
           MESAJ BİLGİLENDİRMELERİ
         </h3>
         <div className="flex flex-col w-full gap-4">
@@ -55,7 +55,7 @@ const EpostaBildirimleri = () => {
       </div>
       <div className="w-full">
         {" "}
-        <h3 className="border border-blue-700 rounded-sm  w-full my-5 px-4 py-2 text-blue-700 font-bold">
+        <h3 className="border border-mblue rounded-sm  w-full my-5 px-4 py-2 text-mblue font-bold">
           KAMPANYA VE PROMOSYONLAR BİLGİLENDİRMELERİ
         </h3>
         <div className="flex flex-col w-full gap-4">

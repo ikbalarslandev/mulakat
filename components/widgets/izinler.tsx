@@ -5,7 +5,7 @@ import CheckboxTemplate from "../checkbox-template";
 const Izinler = () => {
   return (
     <div>
-      <div className="bg-blue-700 mt-4 mx-3 px-2 py-3 rounded flex gap-7 items-center ">
+      <div className="bg-mblue mt-4 mx-3 px-2 py-3 rounded flex gap-7 items-center ">
         <IoWarningOutline className="text-white w-8 h-8" />
         <p className="text-white">
           Aşağıdaki seçenekler yalnızca özgeçmiş havuzu içindir. Başvuru
