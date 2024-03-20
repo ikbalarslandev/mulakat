@@ -9,8 +9,16 @@ const SifreyiDegistir = () => {
       <CardContent>
         <form className="flex flex-col gap-5">
           <div className="flex  items-center gap-4 ">
-            <InputTemplate name="Yeni Sifre" placeholder=" " />
-            <InputTemplate name="Yeni Sifreniz(tekrar)" placeholder=" " />
+            <InputTemplate
+              name="Yeni Sifre"
+              placeholder=" "
+              isPassword={true}
+            />
+            <InputTemplate
+              name="Yeni Sifreniz(tekrar)"
+              placeholder=" "
+              isPassword={true}
+            />
           </div>
         </form>
       </CardContent>

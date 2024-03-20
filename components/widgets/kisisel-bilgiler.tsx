@@ -2,37 +2,15 @@ import * as React from "react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 
-interface InputTemplateProps {
-  name: string;
-  placeholder: string;
-  className?: string;
-}
-
-const InputTemplate = ({
-  name,
-  placeholder,
-  className = "flex-1",
-}: InputTemplateProps) => {
-  return (
-    <div className={`flex flex-col space-y-1.5 relative  ${className}`}>
-      <Label
-        htmlFor={name}
-        className="absolute left-3 text-sm -top-[1px] px-2 bg-white flex gap-1"
-      >
-        <p className="text-gray-500">{name}</p>
-        <span className="text-red-700">*</span>
-      </Label>
-      <Input
-        id={name}
-        placeholder={placeholder}
-        className="border-blue-800 py-4 "
-      />
-    </div>
-  );
-};
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import InputTemplate from "../input-template";
 
 const KisiselBilgiler = () => {
   return (
@@ -43,7 +21,7 @@ const KisiselBilgiler = () => {
             <InputTemplate name="Ad" placeholder="Habip" />
             <InputTemplate name="Soyad" placeholder="Kaya" />
           </div>
-          <div className=" flex justify-between  items-center ">
+          <div className=" flex justify-between  items-center  ">
             <InputTemplate
               name="Eposta Adresi"
               placeholder="habipagca@hotmail.com"
@@ -53,10 +31,23 @@ const KisiselBilgiler = () => {
           </div>
           <div className=" flex justify-between  items-center ">
             <div className="flex  items-center gap-4 w-[25vw] ">
-              <Input
-                placeholder="Turkiye"
-                className="border-blue-800 flex-1 mt-[6px]"
-              />
+              <div className="border-blue-800 flex-1 mt-[6px]">
+                <Select>
+                  <SelectTrigger
+                    id="framework"
+                    className="border-blue-800 text-blue-800"
+                  >
+                    <SelectValue placeholder="Turkiye" />
+                  </SelectTrigger>
+                  <SelectContent position="popper">
+                    <SelectItem value="uk">UK</SelectItem>
+                    <SelectItem value="germany">GERMANY</SelectItem>
+                    <SelectItem value="crotia">CROTIA</SelectItem>
+                    <SelectItem value="us">USA</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+
               <InputTemplate
                 name="Telefon Numarasi"
                 placeholder=" (550) 952 36 33"

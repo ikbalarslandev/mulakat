@@ -6,7 +6,7 @@ import Part4 from "./parts/Part4";
 import Part5 from "./parts/Part5";
 import Part6 from "./parts/Part6";
 
-export function AccordionDemo() {
+export function Mulakat() {
   return (
     <Accordion
       type="single"
