@@ -1,20 +1,6 @@
-"use client";
-
-import { Checkbox } from "@/components/ui/checkbox";
-
 import { IoWarningOutline } from "react-icons/io5";
 import { Button } from "../ui/button";
-
-const CheckboxTemplate = ({ desc }: { desc: string }) => {
-  return (
-    <div className="flex items-center space-x-2">
-      <Checkbox id="terms" />
-      <label htmlFor="terms" className="text-gray-500">
-        {desc}
-      </label>
-    </div>
-  );
-};
+import CheckboxTemplate from "../checkbox-template";
 
 const Izinler = () => {
   return (
@@ -26,7 +12,7 @@ const Izinler = () => {
           yaptığınız firmalar özgeçmişinizin tamamını görüntüleyebilir.
         </p>
       </div>
-      <div className="border rounded mt-3 mx-3 px-1 py-2">
+      <div className="border rounded mt-3 mx-3 px-3 py-4">
         <div className="  flex flex-col gap-3 ">
           <CheckboxTemplate desc="Özgeçmiş havuzu aramalarında görüntülenmesine izin ver" />
           <CheckboxTemplate desc="Is arama durumunu aktif et" />
